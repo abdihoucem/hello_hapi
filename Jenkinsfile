@@ -3,7 +3,7 @@
 pipeline {
 
     agent {
-        docker {
+        jenkins {
             image 'node'
             args '-u jenkins'
         }
