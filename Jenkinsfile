@@ -2,12 +2,7 @@
 
 pipeline {
 
-    agent {
-        jenkins {
-            image 'node'
-            args '-u jenkins'
-        }
-    }
+    agent any
 
     stages {
         stage('Build') {
